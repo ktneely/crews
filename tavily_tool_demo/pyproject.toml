@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tavily_tool_demo"
+version = "0.1.0"
+description = "tavily-tool-demo using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = ">=0.65.2,<1.0.0" }
+
+
+[tool.poetry.scripts]
+tavily_tool_demo = "tavily_tool_demo.main:run"
+run_crew = "tavily_tool_demo.main:run"
+train = "tavily_tool_demo.main:train"
+replay = "tavily_tool_demo.main:replay"
+test = "tavily_tool_demo.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

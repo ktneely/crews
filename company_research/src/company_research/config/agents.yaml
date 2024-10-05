@@ -1,0 +1,44 @@
+framework: crewai
+topic: identify companies that are looking for a CISO to lead their security team
+roles:
+  research_specialist:
+    backstory: Background in market research and data collection with a knack for
+      finding key information efficiently.
+    goal: Identify potential companies looking for a CISO.
+    role: Research Specialist
+    tasks:
+      company_identification:
+        description: Utilize available tools to search for and identify companies
+          advertising open CISO positions.
+        expected_output: List of companies along with URLs to their job postings for
+          CISO roles.
+    tools:
+    - 'EXASearchTool()'
+  data_analyst:
+    backstory: Experienced in data analysis and adept at extracting meaningful insights
+      from large datasets.
+    goal: Analyze and organize the data of identified companies.
+    role: Data Analyst
+    tasks:
+      data_organization:
+        description: Analyze the raw data from the Research Specialist, organize it
+          into a structured format, and identify key details (e.g., company names,
+          job requirements, named leaders with role and background).
+        expected_output: Structured CSV or JSON file containing organized company
+          data and job specifics.
+    tools:
+    - ''
+  report_generator:
+    backstory: Expert in creating detailed and well-structured reports to summarize
+      findings efficiently.
+    goal: Generate a comprehensive report from the analyzed data.
+    role: Report Generator
+    tasks:
+      report_creation:
+        description: Create a comprehensive report summarizing the findings, including
+          company profiles, job requirements, and key insights from the analysis.
+        expected_output: A well-structured report in Markdown format, detailing
+          the companies looking for a CISO and summarizing key information.
+    tools:
+    - ''
+dependencies: []
