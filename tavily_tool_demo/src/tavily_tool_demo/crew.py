@@ -22,7 +22,7 @@ class TavilyToolDemoCrew:
             tools=[tavily_search],
             verbose=True,
 #            llm="groq/llama3-8b-8192",
-			llm="groq/llama3-groq-8b-8192-tool-use-preview"
+	    llm="groq/llama3-groq-8b-8192-tool-use-preview"
         )
 
     @task
