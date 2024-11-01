@@ -10,6 +10,13 @@ __pycache__/
 # Emacs
 *~
 
+# CrewAI-specific
+chroma.sqlite3
+output/
+
+# I use an `ideas/` subdirectory as a scratch pad
+ideas/
+
 # Environment
 .env
 
@@ -46,27 +53,6 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Scrapy stuff:
-.scrapy
 
 # Sphinx documentation
 docs/_build/
@@ -74,6 +60,9 @@ docs/_build/
 # PyBuilder
 .pybuilder/
 target/
+
+
+# Poetry
 
 # Jupyter Notebook
 .ipynb_checkpoints
